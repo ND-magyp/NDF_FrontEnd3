@@ -1,0 +1,15 @@
+
+
+/* Proyectos   */ 
+.proyectos{
+      display: flex;
+    /* align-items por defecto tiene el valor `stretch` */
+    align-items: start;
+  }
+  .center-h {
+    justify-content: center;
+  }
+  .center-v {
+    align-items: center;
+  }
+  

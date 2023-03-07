@@ -1,0 +1,11 @@
+<!-- Links Redes sociales-->
+<div class="redes" >
+  <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 text-light " >
+    <li class="nav-item col-md-auto p3 "*ngFor="let red of redes">
+      <a class="nav-link active fs-5" aria-current="page" [href]="red.url" target=_blank>
+        <i [ngClass]="red.icoFont"></i>
+        <small class="d-md-none ms-2">{{red.nombre}}</small>
+      </a>
+    </li>  
+  </ul>
+</div>

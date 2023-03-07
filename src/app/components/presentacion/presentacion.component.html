@@ -1,0 +1,22 @@
+<!--Banner-->
+<div class="position-relative">
+  <img src="../../../assets/img/banner3.jpg" width="100%" height="250rem">
+</div>
+
+<!--Presentacion-->
+<section class="presentacion my-5">
+  <div class="container text-left">
+    <div class="row" *ngFor="let persona of personas">
+      <div class="col-2">
+        <img [src]="persona.profileImage" alt="Foto perfil" class="rounded-circle img_fluid w:150rem" />
+      </div>
+      <div class="col-md-10 text-md-start "> <!--aca lo adapto responsive-->
+        <h1>{{persona.nombre}} {{persona.apellido}}</h1>
+        <h2>{{persona.titulo1}}</h2>
+        <h2>{{persona.titulo2}}</h2>
+        <p class="text-muted fw-ligth ">{{persona.sobreMi}}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

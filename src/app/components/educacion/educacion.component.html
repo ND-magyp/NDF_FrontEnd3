@@ -1,0 +1,19 @@
+<!--Educacion-->
+
+<section class="row justify-content-center align-items-center py-1 px-md-3 py-md-3" id="Educacion">
+  <div class="row my-3 my-md-5 align-items-center">
+    <h2 class="col-12 col-md-6 text-md-start text-center  text-capitalize my-5 px-md-5  ">Educación </h2>
+  </div>
+  <div class="card border-dark col-11 col-lg-9  mb-4">
+    <div class="row g-0 ">
+      <div class="col-9 col-md-8">
+        <div class="card-body" *ngFor="let educacion of educaciones">
+          <h3 class="card-title">{{educacion.titulo}}</h3>
+          <h4 class="text-uppercase fs-6"><strong>{{educacion.lugar}}</strong></h4>
+          <p class="card-text text-uppercase"><small class="text-muted">{{educacion.anio}}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>

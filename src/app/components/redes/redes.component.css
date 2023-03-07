@@ -1,0 +1,29 @@
+.redes a {
+    align-items: center;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    justify-content: space-between;
+    float: right;
+  
+    
+    margin: 0.5rem;
+    size: 20rem;
+    border-radius: 0.6rem;
+    color: white;
+  
+    transition: 0.45s ease;
+  }
+  
+  .redes a:hover {
+    background: rgba(0, 128, 75, 0.386);
+    color: #189155;
+    align-items: center;
+    
+  }
+  
+  .redes .ingreso:hover {
+    color: #9900cc;
+    background: #280036;
+    
+  }

@@ -1,0 +1,24 @@
+h1{
+    font-size: 4rem;
+    text-align: center;
+    line-height:6rem;
+    
+}
+button{ 
+    background: rgb(224,224,224);
+    text-align: center;
+    
+}
+.container{
+	width:100%;
+	
+	height:9rem;
+	text-align: center;
+
+}
+
+
+section.dash{
+	margin-top:10rem
+}
+

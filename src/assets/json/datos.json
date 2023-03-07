@@ -1,0 +1,163 @@
+{
+    "banner": "../assets/img/banner3.jpg",
+    "usuario": [
+        {
+            "id": 1,
+            "email": "ndoban.magyp@gmail.com",
+            "password": "argen2023",
+            "Persona_id": "1"
+        }
+    ],
+    "personas": [
+        {
+            "id": 1,
+            "banner": "../assets/img/banner3.jpg",
+            "profileImage": "../assets/img/NDF.jpg",
+            "nombre": "Norma D.",
+            "apellido": "Fernandez",
+            "titulo1": "Licenciada en Economía",
+            "titulo2": "Desarrolladora Full Stack Jr",
+            "sobreMi": "Me especializo en ciencia de datos. Estoy cursando la segunda etapa del programa 'Argentina Programa'."
+        }
+    ],
+    "experiencias": [
+        {
+            "id": 1,
+            "empresa": "Secretaría de Agricultura, Ganadería y Pesca",
+            "puesto": "Analista Económico Senior",
+            "inicio": "1991",
+            "fin": "la actualidad"
+        },
+        {
+            "id": 2,
+            "empresa": "Banco de la Nación Argentina (BNA)",
+            "puesto": "Analista Económico Jr",
+            "inicio": "1982",
+            "fin": "1991"
+        }
+    ],
+    "educaciones": [
+        {
+            "id": 1,
+            "titulo": "Licenciada en Economía",
+            "lugar": "UNIVERSIDAD DE BUENOS AIRES",
+            "anio": "1989"
+        },
+        {
+            "id": 2,
+            "titulo": "#YoProgramo 4ta edición",
+            "lugar": "ARGENTINA PROGRAMA",
+            "anio": "2023"
+        }
+    ],
+    "habilidades": [
+        {
+            "id": 1,
+            "nombre": "HTML",
+            "porcentaje": "80",
+            "color": "bg-info",
+            "icoFont": "fa fa-html5",
+            "titulo": "Full Stack"
+        },
+        {
+            "id": 2,
+            "nombre": "CSS",
+            "porcentaje": "50",
+            "color": "bg-info",
+            "icoFont": "fab fa-css3-alt",
+            "titulo": "Full Stack"
+        },
+        {
+            "id": 3,
+            "nombre": "JavaScript",
+            "porcentaje": "40",
+            "color": "bg-info",
+            "icoFont": "fab fa-js",
+            "titulo": "Full Stack"
+        },
+        {
+            "id": 4,
+            "nombre": "SQL",
+            "porcentaje": "90",
+            "color": "bg-warning",
+            "icoFont": "fa-solid fa-database",
+            "titulo": "Bases de Datos"
+        },
+        {
+            "id": 5,
+            "nombre": "ACCESS",
+            "porcentaje": "70",
+            "color": "bg-warning",
+            "icoFont": "fa-solid fa-database",
+            "titulo": "Bases de Datos"
+        },
+        {
+            "id": 6,
+            "nombre": "Power BI",
+            "porcentaje": "60",
+            "color": "bg-warning",
+            "icoFont": "fa-solid fa-chart-simple",
+            "titulo": "Bases de Datos"
+        },
+        {
+            "id": 7,
+            "nombre": "Inglés",
+            "porcentaje": "95",
+            "color": "bg-success",
+            "icoFont": "fa fa-comment",
+            "titulo": "Idiomas"
+        },
+        {
+            "id": 8,
+            "nombre": "Francés",
+            "porcentaje": "75",
+            "color": "bg-success",
+            "icoFont": "fa fa-comment",
+            "titulo": "Idiomas"
+        },
+        {
+            "id": 9,
+            "nombre": "Portugués",
+            "porcentaje": "55",
+            "color": "bg-success",
+            "icoFont": "fa fa-comment",
+            "titulo": "Idiomas"
+        }
+    ],
+    "redes": [
+        {
+            "id": 1,
+            "nombre": "Github",
+            "url": "https://github.com/ND-magyp",
+            "icoFont": "fa-brands fa-github"
+        },
+        {
+            "id": 2,
+            "nombre": "Instagram",
+            "url": "https://www.instagram.com/agriculturaar/?hl=es",
+            "icoFont": "fa-brands fa-instagram"
+        },
+        {
+            "id": 3,
+            "nombre": "Twitter",
+            "url": "https://twitter.com/AgriculturaAR?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            "icoFont": "fa-brands fa-twitter"
+        }
+    ],
+    "proyectos": [
+        {
+            "id": 1,
+            "logoProyecto": "../assets/img/Proyecto1.jpg",
+            "urlProyecto": "https://www.magyp.gob.ar/sitio/areas/gestion/carne/",
+            "tituloProyecto": "Información de Faena",
+            "descripcion": "Informes realizados a partir de bases de datos SQL"
+        },
+        {
+            "id": 2,
+            "logoProyecto": "../assets/img/Proyecto2.jpg",
+            "urlProyecto": "https://siocarnes.magyp.gob.ar/",
+            "tituloProyecto": "SIO Carnes",
+            "descripcion": "Informes realizados a partir de bases de datos SQL"
+        }
+    ]
+}
