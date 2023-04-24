@@ -1,0 +1,19 @@
+{
+   
+    "persona": [
+        {
+            "id": 1,
+            "banner": "../../../../assets/img/banner3.jpg",
+            "profile_image": "../../../../assets/img/NDF.jpg",
+            "nombre": "Norma D.",
+            "apellido": "Fernandez",
+            "titulo1": "Licenciada en Economía",
+            "titulo2": "Desarrolladora Full Stack Jr",
+            "cvpdf": "..assets/img/CV-NDF.pdf",
+            "textofooter": "Copyright, Norma D. Fernandez 2023 All Rights Reserved",
+            "email": "ndoban.magyp@gmail.com",
+            "password": "argen2023",
+            "sobre_mi": "Me especializo en ciencia de datos. Estoy cursando la segunda etapa del programa 'Argentina Programa'."
+        }
+    ]
+    }

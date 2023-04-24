@@ -1,0 +1,42 @@
+/* Inicio Acerca de mi*/
+.img{
+    margin-top: -2.5rem;
+    width: 40%;
+}
+
+.banner{
+    width: 100%;
+    background-size: cover;
+}
+
+.about{
+    width:100%;
+}
+.titulo-about{
+    background: #ffffff;
+    text-align: center;
+    color: #1d1d1d;
+}
+.linea-about{
+    padding: 1.5rem;
+    color: #19191b;
+    line-height: 0;
+}
+.caja-about{
+    width: 90%;
+    margin-left: 5%;
+    align-self: center;
+    height: auto;
+    border: 0.5rem solid #ffffff80;
+    border-color: #e5deef;
+    background: #eeeeee;
+}
+.volver{
+    float: right;
+    margin-top: 1rem;
+}
+.boton{
+    width: 8rem;
+    margin-top: 1rem;
+}
+/* Fin Acerca de mi*/

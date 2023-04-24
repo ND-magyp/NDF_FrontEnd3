@@ -1,0 +1,46 @@
+/* Inicio Proyectos*/
+.proyectos{
+    width:100%;
+}
+.titulo-proy{
+    background: #ffffff;
+    text-align: center;
+    color: #1d1d1d;
+}
+.linea-proy{
+    padding: 1.5rem;
+    color: #19191b;
+    line-height: 0;
+}
+.img{
+    height: 100rem;
+}
+.card{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.caja-pro{
+    width: 90%;
+    margin-left: 5%;
+    align-self: center;
+    height: auto;
+    border: 0.5rem solid #ffffff80;
+    border-color: #e5deef;
+    background: #eeeeee;
+  }
+  .card-body{
+    padding-top: 1rem;
+  }
+  .nuevo{
+      width: 8rem;
+      margin-top: 1rem;
+  }
+  .volver{
+      float: right;
+      margin-top: 1rem;
+  }
+  ul{
+    padding: 0;
+  }
+/* Fin Proyectos*/

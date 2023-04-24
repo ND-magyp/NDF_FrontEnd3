@@ -1,0 +1,120 @@
+<!-- Inicio Proyectos -->
+<section id="dashboardproyectos" class="proyectos mt-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="titulo-proy">
+                <h1 class="text-center linea-proy">PROYECTOS</h1>
+            </div>
+            <div class="mt-3 mb-2 caja-pro">
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary nuevo text-center" data-bs-toggle="modal"
+                        data-bs-target="#ModalProyecto">Agregar Item</button>
+                    <button class="btn btn-dark volver" (click)="volver()" title="Volver"><i
+                            class="bi bi-box-arrow-left"></i></button>
+                </div>
+                <ul>
+                    <div *ngFor="let item of proyectos">
+                        <div class="#">
+                            <div class="row mt-3">
+                                <div class="col-12 col-md-4">
+                                    <img [src]="item.logo_proyecto" class="card-img-top p-2">
+                                </div>
+                                <div class="card-body col-8 col-md-4">
+                                    <h5>{{item.titulo_proyecto}}</h5>
+                                    <p>{{item.descripcion}}</p>
+                                    <a [href]="item.url_proyecto" target="_blank" class="btn btn-primary">Web del
+                                        sitio</a>
+                                </div>
+                                <div class="col-2 text-center">
+                                    <div>
+                                        <button class="btn btn-success m-2" (click)="item.id? cargarItem(item.id): null"
+                                            data-bs-toggle="modal" data-bs-target="#ModalProyecto" title="Editar">
+                                            <i class="fa-solid fa-pen-clip"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-danger m-2"
+                                            (click)="item.id ? borrarItem(item.id) : null" title="Eliminar">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- Fin Proyectos -->
+</section>
+
+
+
+<!-- Inicio Modal Proyecto -->
+<div class="modal fade" id="ModalProyecto" name="ModalProyecto" tabindex="-1" aria-labelledby="ModalProyecto"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="ModalProyectoLabel">Proyecto</h4>
+                <button type="button" (click)="limpiar()" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="form">
+                    <div class="mb-3 row">
+                        <label for="formFileSm" class="form-label">Logo</label>
+                        <input type="text" class="form-control" id="logo_proyecto" formControlName="logo_proyecto"
+                            name="" placeholder="Ej: ../assets/img/Proyecto1.jpg">
+                    </div>
+                    <input type="hidden" name="" id="id">
+                    <div class="mb-3 row">
+                        <label for="formFileSm" class="form-label">Link del Proyecto</label>
+                        <input type="text" class="form-control" id="url_proyecto" formControlName="url_proyecto" name=""
+                            placeholder="Ej: https://www.magyp.gob.ar/sitio/areas/gestion/carne/">
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="formFileSm" class="form-label">Titulo del Proyecto</label>
+                        <input type="text" class="form-control" id="titulo_proyecto" formControlName="titulo_proyecto"
+                            name="" placeholder="Ej: Información de Faena"
+                            [ngClass]="{'is-invalid': titulo_proyectoInvalido, 'is-valid': titulo_proyectoValido}">
+
+                        <!-- Control formato -->
+                        <div *ngIf="titulo_proyecto?.errors && titulo_proyecto?.touched">
+                            <p *ngIf="titulo_proyecto?.hasError('required')" class="errores">
+                                Campo requerido.
+                            </p>
+                            <p *ngIf="titulo_proyecto?.errors?.['minlength']" class="errores">
+                                Debe tener 3 o más caracteres.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="formFileSm" class="form-label">Descripción del proyecto</label>
+                        <textarea type="text" class="form-control" id="descripcion" formControlName="descripcion"
+                            name="" rows="3" placeholder="Ej: Informes realizados a partir de bases de datos SQL"
+                            [ngClass]="{'is-invalid': DescripcionInvalido, 'is-valid': DescripcionValido}"></textarea>
+
+                        <!-- Control formato -->
+                        <div *ngIf="Descripcion?.errors && Descripcion?.touched">
+                            <p *ngIf="Descripcion?.hasError('required')" class="errores">
+                                Campo requerido.
+                            </p>
+                            <p *ngIf="Descripcion?.errors?.['minlength']" class="errores">
+                                Debe tener 8 o más caracteres.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" (click)="guardarItem()" class="btn btn-dark" data-bs-dismiss="modal"
+                            [disabled]="form.invalid">Guardar</button>
+                        <button type="button" (click)="limpiar()" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Volver</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin de Modal para Proyecto -->

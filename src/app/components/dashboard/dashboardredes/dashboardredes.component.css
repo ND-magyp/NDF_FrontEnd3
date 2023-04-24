@@ -1,0 +1,39 @@
+/* Inicio Redes*/
+
+redes{
+    width:100%;
+}
+.titulo-red{
+    background: #ffffff;
+    text-align: center;
+    color: #1d1d1d;
+}
+.linea-red{
+    padding: 1.5rem;
+    color: #19191b;
+    line-height: 0;
+}
+.caja-red{
+    width: 90%;
+    margin-left: 5%;
+    align-self: center;
+    height: auto;
+    border: 0.5rem solid #ffffff80;
+    border-color: #e5deef;
+    background: #eeeeee;
+}
+
+.nuevo{
+    width: 8rem;
+    margin-top: 1rem;
+}
+.volver{
+    float: right;
+    margin-top: 1rem;
+}
+
+.linea{
+    color: black;
+}
+
+/* Fin Redes*/

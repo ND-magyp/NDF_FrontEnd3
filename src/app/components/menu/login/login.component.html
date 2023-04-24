@@ -1,0 +1,48 @@
+<div class="contenedor">
+    <div class="container-fluid">
+        <h2>Login</h2>
+    </div>
+    <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+        <div class="mb-3 row">
+            <label for="email" class="col-sm-4 col-form-label">
+                <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email:
+            </label>
+            <div class="col-sm-8">
+                <input type="email" class="form-control" formControlName="email" placeholder="email@dominio.com"
+                    [ngClass]="{'is-invalid': MailInvalido, 'is-valid': MailValido}">
+
+                <!-- Verificacion del formato de email -->
+                <div *ngIf="Mail?.errors && Mail?.touched">
+                    <p *ngIf="Mail?.hasError('required')" class="errores">
+                        El email es requerido.
+                    </p>
+                    <p *ngIf="Mail?.hasError('email')" class="errores">
+                        El formato del email debe ser válido.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="Password" class="col-sm-4 col-form-label"><i
+                    class="fa-solid fa-lock"></i>&nbsp;&nbsp;&nbsp;Contraseña: </label>
+            <div class="col-sm-8">
+                <input type="password" class="form-control" formControlName="password" placeholder="********"
+                    [ngClass]="{'is-invalid': PasswordInvalido, 'is-valid': PasswordValido}">
+
+                <!-- Verificacion password -->
+                <div *ngIf="Password?.errors && Password?.touched">
+                    <p *ngIf="Password?.hasError('required')" class="errores">
+                        El Password es requerido.
+                    </p>
+                    <p *ngIf="Password?.errors?.['minlength']" class="errores">
+                        El Password debe ser de 8 o más caracteres.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="elemento text-center">
+            <button type="submit" class="btn btn-dark m-2">Ingresar</button>
+            <button type="button" (click)="limpiar()" class="btn btn-secondary m-2">Volver</button>
+        </div>
+    </form>
+</div>

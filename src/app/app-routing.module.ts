@@ -1,19 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Error404Component } from './components/error404/error404.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ErrorComponent } from './components/error/error.component';
 import { IndexComponent } from './components/index/index.component';
-import { LoginComponent } from './components/modals/login/login.component';
+import { LoginComponent } from './components/menu/login/login.component';
+import { DashboardRoutingModule } from './dashboard-routing.module';
+import { AuthGuard } from './servicios/auth.guard';
 
 const routes: Routes = [
-  {path: '', component: IndexComponent},
-  {path:'dashboard', component: DashboardComponent},
-  {path:'login', component: LoginComponent},
-  {path: '**', component: Error404Component}
+  {path: 'index', component: IndexComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
+  {path: '', redirectTo: '/index', pathMatch: 'full'},
+  {path: '**', component: ErrorComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  declarations: [],
+  imports: [RouterModule.forRoot(routes),
+    DashboardRoutingModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

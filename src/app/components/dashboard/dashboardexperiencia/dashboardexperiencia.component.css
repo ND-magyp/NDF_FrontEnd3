@@ -1,0 +1,42 @@
+/* Inicio Experiencia*/
+.experiencia{
+    width:100%;
+}
+.titulo-exp{
+    background: #ffffff;
+    text-align: center;
+    color: #1d1d1d;
+}
+.linea-exp{
+    padding: 1.5rem;
+    color: #19191b;
+    line-height: 0;
+}
+.caja-exp{
+    width: 90%;
+    margin-left: 5%;
+    align-self: center;
+    height: auto;
+    border: 0.5rem solid #ffffff80;
+    border-color: #e5deef;
+    background: #eeeeee;
+  }
+.logo-exp{
+    align-items: center;
+}
+.texto-exp{
+    align-items: left;
+    text-align: left;
+}
+.list-group-item{
+    padding: 0.3rem;
+}
+.nuevo{
+    width: 8rem;
+    margin-top: 1rem;
+}
+.volver{
+    float: right;
+    margin-top: 1rem;
+}
+/* Fin Experiencia*/

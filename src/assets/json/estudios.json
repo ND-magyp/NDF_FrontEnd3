@@ -1,0 +1,16 @@
+{
+  "estudios": [
+        {
+            "id": 1,
+            "titulo": "Licenciada en Economía",
+            "lugar": "UNIVERSIDAD DE BUENOS AIRES",
+            "anio": "1989"
+        },
+        {
+            "id": 2,
+            "titulo": "#YoProgramo 4ta edición",
+            "lugar": "ARGENTINA PROGRAMA",
+            "anio": "2023"
+        }
+    ]
+    }

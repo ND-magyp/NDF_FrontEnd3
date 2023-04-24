@@ -1,0 +1,210 @@
+<!-- Inicio Acerca de Mi -->
+<section id="dashboardpersona" class="about mt-5">
+    <div class="container-fluid">
+        <div>
+            <div class="titulo-about">
+                <h1 class="text-center linea-about">PERSONA</h1>
+            </div>
+        </div>
+    </div>
+    <div class="caja-about mt-3 mb-2 row">
+        <div class="text-center mb-3">
+            <button class="btn btn-primary boton text-center" (click)="cargarItem()" data-bs-toggle="modal"
+                data-bs-target="#ModalPerfil" title="editar">Editar Perfil</button>
+                <button class="btn btn-dark volver" (click)="volver()" title="Volver"><i
+                    class="bi bi-box-arrow-left"></i></button>
+        </div>
+        <hr>
+        <img [src]="persona.banner" class="w-100 img-fluid banner" alt="Banner">
+        <div class="container-fluid text-center card-body row">
+            <div class="col-0 col-md-1"></div>
+            <div class="col-12 col-md-3">
+                <img class="rounded-circle img" [src]="persona.profile_image" alt="Foto de perfil">
+                <h1 class="titulo">{{persona.nombre}} {{persona.apellido}}</h1>
+                <h4 class="info">{{persona.titulo1}}</h4>
+                <h4 class="info">{{persona.titulo2}}</h4>
+            </div>
+            <div class="col-12 col-md-8 pt-5">
+                <h2 class="titulo">Acerca de Mi</h2>
+                <h5 class="info">{{persona.sobre_mi}}</h5>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin  Acerca de Mi-->
+
+
+<!-- Inicio Modal Persona -->
+<div class="modal fade" id="ModalPerfil" name="ModalPerfil" tabindex="-1" aria-labelledby="ModalPerfil"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="ModalPerfil">Perfil</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="form">
+                    <input type="hidden" name="" id="id">
+                    <div class="mb-3 row">
+                        <label for="formFileSm" class="form-label">Foto de Perfil</label>
+                        <input type="text" class="form-control" id="profile_Image" formControlName="profile_Image" name=""
+                            placeholder="Ej: ../../../../assets/img/NDF.jpg"
+                            [ngClass]="{'is-invalid': Profile_imageInvalido, 'is-valid': Profile_imageValido}">
+
+                        <!-- Control formato -->
+                        <div *ngIf="Profile_image?.errors && Profile_image?.touched">
+                            <p *ngIf="Profile_image?.hasError('required')" class="errores">
+                                Campo requerido.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="formFileSm" class="form-label">Banner</label>
+                        <input type="text" class="form-control" id="banner" formControlName="banner" name=""
+                            placeholder="Ej: ../../../../assets/img/banner3.jpg"
+                            [ngClass]="{'is-invalid': BannerInvalido, 'is-valid': BannerValido}">
+
+                        <!-- Control formato -->
+                        <div *ngIf="Banner?.errors && Banner?.touched">
+                            <p *ngIf="Banner?.hasError('required')" class="errores">
+                                Campo requerido.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="formFileSm" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" formControlName="nombre" name=""
+                            placeholder="Ej: Norma D."
+                            [ngClass]="{'is-invalid': NombreInvalido, 'is-valid': NombreValido}">
+
+                        <!-- Control formato -->
+                        <div *ngIf="Nombre?.errors && Nombre?.touched">
+                            <p *ngIf="Nombre?.hasError('required')" class="errores">
+                                Campo requerido.
+                            </p>
+                            <p *ngIf="Nombre?.errors?.['minlength']" class="errores">
+                                Debe ser de 2 o más caracteres.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="formFileSm" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" formControlName="apellido" name=""
+                            placeholder="Ej: Fernández"
+                            [ngClass]="{'is-invalid': ApellidoInvalido, 'is-valid': ApellidoValido}">
+
+                        <!-- Control formato -->
+                        <div *ngIf="Apellido?.errors && Apellido?.touched">
+                            <p *ngIf="Apellido?.hasError('required')" class="errores">
+                                Campo requerido.
+                            </p>
+                            <p *ngIf="Apellido?.errors?.['minlength']" class="errores">
+                                Debe ser de 2 o más caracteres.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Titulo 1 -->
+                    <div class="mb-3 row">
+                        <label for="formFileSm" class="form-label">Titulo 1</label>
+                        <input type="text" class="form-control" id="titulo1" formControlName="titulo1" name=""
+                            placeholder="Ej: Licenciada en Economía"
+                            [ngClass]="{'is-invalid': Titulo1Invalido, 'is-valid': Titulo1Valido}">
+
+                        <!-- Control formato -->
+                        <div *ngIf="Titulo1?.errors && Titulo1?.touched">
+                            <p *ngIf="Titulo1?.hasError('required')" class="errores">
+                                Campo requerido.
+                            </p>
+                            <p *ngIf="Titulo1?.errors?.['minlength']" class="errores">
+                                Debe ser de 2 o más caracteres.
+                            </p>
+                        </div>
+                        <!--Titulo 2 -->
+                        <div class="mb-3 row">
+                            <label for="formFileSm" class="form-label">Titulo 2</label>
+                            <input type="text" class="form-control" id="titulo2" formControlName="titulo2" name=""
+                                placeholder="Ej: Desarrolladora Full Stack Jr"
+                                [ngClass]="{'is-invalid': Titulo2Invalido, 'is-valid': Titulo2Valido}">
+
+                            <!-- Control formato -->
+                            <div *ngIf="Titulo2?.errors && Titulo2?.touched">
+                                <p *ngIf="Titulo2?.hasError('required')" class="errores">
+                                    Campo requerido.
+                                </p>
+                                <p *ngIf="Titulo2?.errors?.['minlength']" class="errores">
+                                    Debe ser de 2 o más caracteres.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--Sobre_mi -->
+                        <div class="mb-3 row">
+                            <label for="formFileSm" class="form-label">Acerca de</label>
+                            <textarea type="text" class="form-control" id="sobre_mi" formControlName="sobre_mi" name=""
+                                placeholder="Ej: Me especializo en ciencia de datos. Estoy cursando la segunda etapa del programa Argentina Programa."
+                                rows="3"
+                                [ngClass]="{'is-invalid': Sobre_miInvalido, 'is-valid': Sobre_miValido}"></textarea>
+
+                            <!-- Control formato -->
+                            <div *ngIf="Sobre_mi?.errors && Sobre_mi?.touched">
+                                <p *ngIf="Sobre_mi?.hasError('required')" class="errores">
+                                    Campo requerido.
+                                </p>
+                                <p *ngIf="Sobre_mi?.errors?.['minlength']" class="errores">
+                                    Debe ser de 2 o más caracteres.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--CV en PDF -->
+                        <div class="mb-3 row">
+                            <label for="formFileSm" class="form-label">CV en PDF</label>
+                            <input type="text" class="form-control" id="cvpdf" formControlName="cvpdf" name=""
+                                placeholder="Ej: ../../../../assets/img/CV-NDF.pdf"
+                                [ngClass]="{'is-invalid': CvpdfInvalido, 'is-valid': CvpdfValido}">
+
+                            <!-- Control formato -->
+                            <div *ngIf="Cvpdf?.errors && Cvpdf?.touched">
+                                <p *ngIf="Cvpdf?.hasError('required')" class="errores">
+                                    Campo requerido.
+                                </p>
+                                <p *ngIf="Cvpdf?.errors?.['minlength']" class="errores">
+                                    Debe ser de 2 o más caracteres.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--Texto pie de página-->
+                        <div class="mb-3 row">
+                            <label for="formFileSm" class="form-label">Texto pie de página</label>
+                            <input type="text" class="form-control" id="textofooter" formControlName="textofooter"
+                                name="" placeholder="Ej: Copyright, Norma D. Fernandez 2023 All Rights Reserved"
+                                [ngClass]="{'is-invalid': TextofooterInvalido, 'is-valid': TextofooterValido}">
+
+                            <!-- Control formato -->
+                            <div *ngIf="Textofooter?.errors && Textofooter?.touched">
+                                <p *ngIf="Textofooter?.hasError('required')" class="errores">
+                                    Campo requerido.
+                                </p>
+                                <p *ngIf="Textofooter?.errors?.['minlength']" class="errores">
+                                    Debe ser de 2 o más caracteres.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" (click)="guardarItem()" class="btn btn-dark" data-bs-dismiss="modal"
+                                [disabled]="form.invalid">Guardar</button>
+                            <button type="button" (click)="limpiar()" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Volver</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin de Modal para Datos de la Persona -->

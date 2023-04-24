@@ -1,0 +1,18 @@
+export class Estudio {
+
+    id: number;
+    titulo: string;
+    lugar: string;
+    anio: string;
+    personaid: string;
+
+    constructor(titulo: string, lugar: string, anio: string, personaid: string) {
+
+        // el lado izquierdo hace referencia al titulo de arriba: o estoy inicializando. La variable que esta a la derecha hace referencia al que esta en el constructor
+        // que ingresa por parametro
+        this.titulo = titulo;
+        this.lugar = lugar;
+        this.anio = anio;
+        this.personaid = personaid;
+    }
+}

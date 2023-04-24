@@ -1,0 +1,23 @@
+<!--Proyectos -->
+<section class="row justify-content-center align-items-center py-1 px-md-3 py-md-3 " id="Proyectos">
+  <div class="row my-3 my-md-5 align-items-center">
+    <h2 class="col-12 col-md-6 text-md-start text-center text-black text-capitalize my-5 px-md-5">Proyectos</h2>
+  </div>
+  <div class="proyectos center-h center-v col sm-12 section" *ngFor="let item of proyectos">
+    <div class="card border-dark col-11 col-lg-8 mb-4">
+      <div class="col-sm-12 cont-img">
+        <img class="card-img" [src]="item.logo_proyecto" alt="Foto">
+      </div>
+      <div class="col-sm-12">
+        <div class="card-body">
+          <h5 class="card-title">{{item.titulo_proyecto}}</h5>
+          <p class="card-text">{{item.descripcion}}</p>
+          <a [href]="item.url_proyecto" target=_blank class="btn btn-dark">Página
+            Web </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<p class="text-white">¡¡¡¡</p>

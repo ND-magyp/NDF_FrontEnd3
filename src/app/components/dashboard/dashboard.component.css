@@ -1,0 +1,26 @@
+/* Inicio Dashboard*/
+.panel{
+    margin-top: 1rem;
+}
+
+.caja{
+    color: #ffffff;
+    width: 6.5rem;
+    background-color: #9c9ea1;
+    border-color: #c8aef1;
+    border-width: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+p{
+  margin-bottom: 0;
+}
+
+.midash{
+  margin-top: 1rem;
+  align-items: center;
+  background-color: white;
+  width: 70%;
+  margin-left: 15%;
+}
+/* Fin Dashboard*/

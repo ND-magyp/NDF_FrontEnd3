@@ -1,0 +1,27 @@
+/* Inicio Navbar */
+.bg-secondary{
+    background-color: #060028!important;
+    z-index: 1030;
+}
+.navbar-toggler{
+    background-color: #ffffff;
+}
+.navbar-nav{
+    align-items: flex-end;
+}
+.navbar{
+    flex-wrap: nowrap;
+}
+.list-group{
+    --bs-list-group-bg: none;
+    --bs-list-group-border-color: none;
+}
+/* Inicio Logout */
+i.fa-solid:hover{
+    color: #ff0000 !important;
+}
+.list-group-item{
+    padding: 0.3rem;
+}
+/* Fin Logout */
+/* Fin Navbar */

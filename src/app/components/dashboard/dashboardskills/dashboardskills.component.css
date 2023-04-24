@@ -1,0 +1,62 @@
+/* Inicio Skills*/
+.skills{
+    width:100%;
+}
+.titulo-skill{
+    background: #ffffff;
+    text-align: center;
+    color: #1d1d1d;
+}
+.linea-skill{
+    padding: 1.5rem;
+    color: #19191b;
+    line-height: 0;
+}
+.caja-skill{
+    width: 70%;
+    margin-left: 15%;
+    align-self: center;
+    height: auto;
+    border: 0.5rem solid #ffffff80;
+    border-color: #e5deef;
+    background: #eeeeee;
+}
+.item-skill{
+	width: 100%;
+	float: left;
+	list-style-type: none;
+	padding: 1%;
+}
+.item-skill:nth-child(even){
+    margin-bottom: 5em;
+}
+.tit-item-skill {
+	margin: 0 0 1.5em;
+	border-bottom: 0.0.5rem solid #cccccc;	
+	padding: 0 0 .25em;
+}
+.skill-frontend{
+    --bs-progress-bar-bg: #9f2ec8!important;
+    font-weight: bold;
+}
+.skill-backend{
+    --bs-progress-bar-bg: #07b70f!important;
+    font-weight: bold;
+}
+.skill-idiomas{
+    --bs-progress-bar-bg: #c85a2e!important;
+    font-weight: bold;
+}
+.skill-otros{
+    --bs-progress-bar-bg: #0f47e2!important;
+    font-weight: bold;
+}
+.nuevo{
+    width: 8rem;
+    margin-top: 1rem;
+}
+.volver{
+    float: right;
+    margin-top: 1rem;
+}
+/* Fin Skills*/

@@ -1,0 +1,110 @@
+<!-- Inicio Estudios -->
+<section id="dashestudios" class="estudios mt-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="titulo-est">
+                <h1 class="text-center linea-est">EDUCACIÓN</h1>
+            </div>
+            <div class="mt-3 mb-2 caja-est">
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary nuevo text-center" data-bs-toggle="modal"
+                        data-bs-target="#ModalEstudio">Agregar Item</button>
+                    <button class="btn btn-dark volver" (click)="volver()" title="Volver"><i
+                            class="bi bi-box-arrow-left"></i></button>
+                </div>
+                <ul>
+                    <div *ngFor="let item of estudios">
+                        <li class="list-group-item mt-5">
+                            <div class="container row">
+                                <div class="col-9 col-md-8">
+                                    <h3>{{item.titulo}} ({{item.anio}})</h3>
+                                    <h4>{{item.lugar}}</h4>
+                                </div>
+                                <div class="col-2 text-center">
+                                    <div>
+                                        <button class="btn btn-success m-2" (click)="item.id? cargarItem(item.id): null"
+                                            data-bs-toggle="modal" data-bs-target="#ModalEstudio" title="Editar">
+                                            <i class="fa-solid fa-pen-clip"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-danger m-2"
+                                            (click)="item.id ? borrarItem(item.id) : null" title="Eliminar">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- Fin Estudios -->
+</section>
+
+<!-- Inicio Modal Estudios -->
+<div class="modal fade" id="ModalEstudio" name="ModalEstudio" tabindex="-1" aria-labelledby="ModalEstudio"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="ModalEstudioLabel">Educación</h4>
+                <button type="button" (click)="limpiar()" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="form">
+                    <div class="mb-3 row">
+                        <label for="formFileSm" class="form-label">Institución</label>
+                        <input type="text" class="form-control" id="lugar" formControlName="lugar" name=""
+                            placeholder="Ej: UBA FCE"
+                            [ngClass]="{'is-invalid': LugarInvalido, 'is-valid': LugarValido}">
+
+                        <!-- Control formato -->
+                        <div *ngIf="Lugar?.errors && Lugar?.touched">
+                            <p *ngIf="Lugar?.hasError('required')" class="errores">
+                                Campo requerido.
+                            </p>
+                            <p *ngIf="Lugar?.errors?.['minlength']" class="errores">
+                                Debe tener 3 o más caracteres.
+                            </p>
+                        </div>
+                    </div>
+                    <input type="hidden" name="" id="id">
+                    <div class="mb-3 row">
+                        <label for="formFileSm" class="form-label">Titulo</label>
+                        <input type="text" class="form-control" id="titulo" formControlName="titulo" name=""
+                            placeholder="Ej: Licenciada en economía"
+                            [ngClass]="{'is-invalid': TituloInvalido, 'is-valid': TituloValido}">
+
+                        <!-- Control formato -->
+                        <div *ngIf="Titulo?.errors && Titulo?.touched">
+                            <p *ngIf="Titulo?.hasError('required')" class="errores">
+                                Campo requerido.
+                            </p>
+                            <p *ngIf="Titulo?.errors?.['minlength']" class="errores">
+                                Debe tener 3 o más caracteres.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label for="formFileSm" class="form-label">Año finalización</label>
+                        <input type="text" class="form-control" id="anio" formControlName="anio" name=""
+                            placeholder="Ej: 2023">
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" (click)="guardarItem()" class="btn btn-dark" data-bs-dismiss="modal"
+                            [disabled]="form.invalid">Guardar</button>
+                        <button type="button" (click)="limpiar()" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Volver</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin Modal Estudio -->

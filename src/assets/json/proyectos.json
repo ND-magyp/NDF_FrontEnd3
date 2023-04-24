@@ -1,0 +1,18 @@
+{
+   "proyectos": [
+        {
+            "id": 1,
+            "logo_proyecto": "../../../../assets/img/Proyecto1.jpg",
+            "url_proyecto": "https://www.magyp.gob.ar/sitio/areas/gestion/carne/",
+            "titulo_proyecto": "Informaci�n de Faena",
+            "descripcion": "Informes realizados a partir de bases de datos SQL"
+        },
+        {
+            "id": 2,
+            "logo_proyecto": "../../../../assets/img/Proyecto2.jpg",
+            "url_proyecto": "https://siocarnes.magyp.gob.ar/",
+            "titulo_proyecto": "SIO Carnes",
+            "descripcion": "Informes realizados a partir de bases de datos SQL"
+        }
+    ]
+    }

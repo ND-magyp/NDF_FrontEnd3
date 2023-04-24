@@ -1,0 +1,42 @@
+/* Inicio Estudio*/
+.estudios{
+    width:100%;
+}
+.titulo-est{
+    background: #ffffff;
+    text-align: center;
+    color: #1d1d1d;
+}
+.linea-est{
+    padding: 1.5rem;
+    color: #19191b;
+    line-height: 0;
+}
+.caja-est{
+    width: 90%;
+    margin-left: 5%;
+    align-self: center;
+    height: auto;
+    border: 0.5rem solid #ffffff80;
+    border-color: #e5deef;
+    background: #eeeeee;
+  }
+.logo-est{
+    align-items: center;
+}
+.texto-est{
+    align-items: left;
+    text-align: left;
+}
+.list-group-item{
+    padding: 0.3rem;
+}
+.nuevo{
+    width: 8rem;
+    margin-top: 1rem;
+}
+.volver{
+    float: right;
+    margin-top: 1rem;
+}
+/* Fin Estudio*/

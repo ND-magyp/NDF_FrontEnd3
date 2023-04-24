@@ -1,0 +1,22 @@
+{
+ "redes": [
+        {
+            "id": 1,
+            "nombre": "Github",
+            "url": "https://github.com/ND-magyp",
+            "ico_font": "fa-brands fa-github"
+        },
+        {
+            "id": 2,
+            "nombre": "Instagram",
+            "url": "https://www.instagram.com/agriculturaar/?hl=es",
+            "ico_font": "fa-brands fa-instagram"
+        },
+        {
+            "id": 3,
+            "nombre": "Twitter",
+            "url": "https://twitter.com/AgriculturaAR?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            "ico_font": "fa-brands fa-twitter"
+        }
+    ]
+    }

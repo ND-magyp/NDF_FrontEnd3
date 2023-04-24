@@ -1,0 +1,13 @@
+/* Proyectos   */
+.proyectos {
+  display: flex;
+  align-items: flex-start;
+}
+
+.center-h {
+  justify-content: center;
+}
+
+.center-v {
+  align-items: center;
+}

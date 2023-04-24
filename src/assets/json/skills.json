@@ -1,0 +1,76 @@
+{
+ "skills": [
+        {
+            "id": 1,
+            "nombre": "HTML",
+            "porcentaje": "80",
+            "color": "bg-info",
+            "ico_font": "fa fa-html5",
+            "titulo": "Full Stack"
+        },
+        {
+            "id": 2,
+            "nombre": "CSS",
+            "porcentaje": "50",
+            "color": "bg-info",
+            "ico_font": "fab fa-css3-alt",
+            "titulo": "Full Stack"
+        },
+        {
+            "id": 3,
+            "nombre": "JavaScript",
+            "porcentaje": "40",
+            "color": "bg-info",
+            "ico_font": "fab fa-js",
+            "titulo": "Full Stack"
+        },
+        {
+            "id": 4,
+            "nombre": "SQL",
+            "porcentaje": "90",
+            "color": "bg-warning",
+            "ico_font": "fa-solid fa-database",
+            "titulo": "Bases de Datos"
+        },
+        {
+            "id": 5,
+            "nombre": "ACCESS",
+            "porcentaje": "70",
+            "color": "bg-warning",
+            "ico_font": "fa-solid fa-database",
+            "titulo": "Bases de Datos"
+        },
+        {
+            "id": 6,
+            "nombre": "Power BI",
+            "porcentaje": "60",
+            "color": "bg-warning",
+            "ico_font": "fa-solid fa-chart-simple",
+            "titulo": "Bases de Datos"
+        },
+        {
+            "id": 7,
+            "nombre": "Ingl�s",
+            "porcentaje": "95",
+            "color": "bg-success",
+            "ico_font": "fa fa-comment",
+            "titulo": "Idiomas"
+        },
+        {
+            "id": 8,
+            "nombre": "Franc�s",
+            "porcentaje": "75",
+            "color": "bg-success",
+            "ico_font": "fa fa-comment",
+            "titulo": "Idiomas"
+        },
+        {
+            "id": 9,
+            "nombre": "Portugu�s",
+            "porcentaje": "55",
+            "color": "bg-success",
+            "ico_font": "fa fa-comment",
+            "titulo": "Idiomas"
+        }
+    ]
+    }

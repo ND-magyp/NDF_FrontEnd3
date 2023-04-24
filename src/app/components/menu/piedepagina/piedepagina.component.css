@@ -1,0 +1,16 @@
+/* Inicio pie de página*/
+.caja{
+    color: #ffffff;
+    width: 3rem;
+    height: 3rem;
+    background-color: #f8eff9;
+    border-color: rgb(22, 22, 14);
+    border-width: .1rem;
+    border-radius: .1rem;
+  }
+.footer{
+    color: rgb(22, 22, 14);
+    background: #ffffff;
+    font-weight: bold;
+}
+/* Fin pie de página*/

@@ -1,74 +1,66 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+
+
 import { AppComponent } from './app.component';
 import { IndexComponent } from './components/index/index.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { PresentacionComponent } from './components/presentacion/presentacion.component';
-import { ExperienciaComponent } from './components/experiencia/experiencia.component';
-import { EducacionComponent } from './components/educacion/educacion.component';
-import { HabilidadesComponent } from './components/habilidades/habilidades.component';
-import { ProyectosComponent } from './components/proyectos/proyectos.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { Error404Component } from './components/error404/error404.component';
-import { RedesComponent } from './components/redes/redes.component';
+import { ErrorComponent } from './components/error/error.component';
+import { RedesComponent } from './components/menu/redes/redes.component';
+import { NavbarComponent } from './components/menu/navbar/navbar.component';
+import { PiedepaginaComponent } from './components/menu/piedepagina/piedepagina.component';
+import { LoginComponent } from './components/menu/login/login.component';
 
-import { BotonLoginComponent } from './components/boton-login/boton-login.component';
-import { LoginComponent } from './components/modals/login/login.component';
+import { AcercademiComponent } from './components/principal/acercademi/acercademi.component';
+import { ExperienciaComponent } from './components/principal/experiencia/experiencia.component';
+import { EstudiosComponent } from './components/principal/estudios/estudios.component';
+import { ProyectosComponent } from './components/principal/proyectos/proyectos.component';
+import { SkillsComponent } from './components/principal/skills/skills.component';
+
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { NavbarDashboardComponent } from './components/navbar-dashboard/navbar-dashboard.component';
-import { BotonLogoutComponent } from './components/boton-logout/boton-logout.component';
-import { RedesSocialesComponent } from './components/modals/redes-sociales/redes-sociales.component';
-import { BannerComponent } from './components/modals/banner/banner.component';
-import { PresentacionModalComponent } from './components/modals/presentacion-modal/presentacion-modal.component';
-import { HabilidadesModalComponent } from './components/modals/habilidades-modal/habilidades-modal.component';
-import { ExperienciaModalComponent } from './components/modals/experiencia-modal/experiencia-modal.component';
-import { EducacionModalComponent } from './components/modals/educacion-modal/educacion-modal.component';
-import { PiepaginaComponent } from './components/modals/piepagina/piepagina.component';
-import { ProyectosModalComponent } from './components/modals/proyectos-modal/proyectos-modal.component';
-
+import { DashboardexperienciaComponent } from './components/dashboard/dashboardexperiencia/dashboardexperiencia.component';
+import { DashboardestudiosComponent } from './components/dashboard/dashboardestudios/dashboardestudios.component';
+import { DashboardproyectosComponent } from './components/dashboard/dashboardproyectos/dashboardproyectos.component';
+import { DashboardskillsComponent } from './components/dashboard/dashboardskills/dashboardskills.component';
+import { DashboardredesComponent } from './components/dashboard/dashboardredes/dashboardredes.component';
+import { DashboardpersonaComponent } from './components/dashboard/dashboardpersona/dashboardpersona.component';
+import { NavbarDashboardComponent } from './components/menu/navbar-dashboard/navbar-dashboard.component';
+import { BotonLoginComponent } from './components/menu/boton-login/boton-login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent,
-    NavbarComponent,
-    PresentacionComponent,
-    ExperienciaComponent,
-    EducacionComponent,
-    HabilidadesComponent,
-    ProyectosComponent,
-    FooterComponent,
-    Error404Component,
     RedesComponent,
-    BotonLoginComponent,
-    LoginComponent,
+    AcercademiComponent,
+    ExperienciaComponent,
+    EstudiosComponent,
+    SkillsComponent,
+    ProyectosComponent,
+    NavbarComponent,
+    PiedepaginaComponent,
     DashboardComponent,
+    ErrorComponent,
+    IndexComponent,
+    LoginComponent,
+    DashboardexperienciaComponent,
+    DashboardestudiosComponent,
+    DashboardproyectosComponent,
+    DashboardskillsComponent,
+    DashboardredesComponent,
+    DashboardpersonaComponent,
     NavbarDashboardComponent,
-    BotonLogoutComponent,
-    RedesSocialesComponent,
-    BannerComponent,
-    PresentacionModalComponent,
-    HabilidadesModalComponent,
-    ExperienciaModalComponent,
-    EducacionModalComponent,
-    PiepaginaComponent,
-    ProyectosModalComponent,
+    BotonLoginComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-

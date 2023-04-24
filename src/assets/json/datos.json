@@ -1,31 +1,26 @@
 {
-    "banner": "../assets/img/banner3.jpg",
-    "usuario": [
+    "persona": [
         {
             "id": 1,
-            "email": "ndoban.magyp@gmail.com",
-            "password": "argen2023",
-            "Persona_id": "1"
-        }
-    ],
-    "personas": [
-        {
-            "id": 1,
-            "banner": "../assets/img/banner3.jpg",
-            "profileImage": "../assets/img/NDF.jpg",
             "nombre": "Norma D.",
             "apellido": "Fernandez",
             "titulo1": "Licenciada en Economía",
             "titulo2": "Desarrolladora Full Stack Jr",
-            "sobreMi": "Me especializo en ciencia de datos. Estoy cursando la segunda etapa del programa 'Argentina Programa'."
-        }
+            "banner": "../../../../assets/img/banner3.jpg",
+            "profile_image": "../../../../assets/img/NDF.jpg",
+            "sobre_mi": "Me especializo en ciencia de datos. Estoy cursando la segunda etapa del programa 'Argentina Programa'.",
+            "cvpdf": "..assets/img/CV-NDF.pdf",
+            "textofooter": "Copyright, Norma D. Fernandez 2023 All Rights Reserved",
+            "email": "ndoban.magyp@gmail.com",
+            "password": "argen2023"
+                    }
     ],
     "experiencias": [
         {
             "id": 1,
             "empresa": "Secretaría de Agricultura, Ganadería y Pesca",
             "puesto": "Analista Económico Senior",
-            "inicio": "1991",
+            "inicio": "1992",
             "fin": "la actualidad"
         },
         {
@@ -36,7 +31,7 @@
             "fin": "1991"
         }
     ],
-    "educaciones": [
+    "estudios": [
         {
             "id": 1,
             "titulo": "Licenciada en Economía",
@@ -50,13 +45,13 @@
             "anio": "2023"
         }
     ],
-    "habilidades": [
+    "skills": [
         {
             "id": 1,
             "nombre": "HTML",
             "porcentaje": "80",
             "color": "bg-info",
-            "icoFont": "fa fa-html5",
+            "ico_font": "fa fa-html5",
             "titulo": "Full Stack"
         },
         {
@@ -64,7 +59,7 @@
             "nombre": "CSS",
             "porcentaje": "50",
             "color": "bg-info",
-            "icoFont": "fab fa-css3-alt",
+            "ico_font": "fab fa-css3-alt",
             "titulo": "Full Stack"
         },
         {
@@ -72,7 +67,7 @@
             "nombre": "JavaScript",
             "porcentaje": "40",
             "color": "bg-info",
-            "icoFont": "fab fa-js",
+            "ico_font": "fab fa-js",
             "titulo": "Full Stack"
         },
         {
@@ -80,7 +75,7 @@
             "nombre": "SQL",
             "porcentaje": "90",
             "color": "bg-warning",
-            "icoFont": "fa-solid fa-database",
+            "ico_font": "fa-solid fa-database",
             "titulo": "Bases de Datos"
         },
         {
@@ -88,7 +83,7 @@
             "nombre": "ACCESS",
             "porcentaje": "70",
             "color": "bg-warning",
-            "icoFont": "fa-solid fa-database",
+            "ico_font": "fa-solid fa-database",
             "titulo": "Bases de Datos"
         },
         {
@@ -96,7 +91,7 @@
             "nombre": "Power BI",
             "porcentaje": "60",
             "color": "bg-warning",
-            "icoFont": "fa-solid fa-chart-simple",
+            "ico_font": "fa-solid fa-chart-simple",
             "titulo": "Bases de Datos"
         },
         {
@@ -104,7 +99,7 @@
             "nombre": "Inglés",
             "porcentaje": "95",
             "color": "bg-success",
-            "icoFont": "fa fa-comment",
+            "ico_font": "fa fa-comment",
             "titulo": "Idiomas"
         },
         {
@@ -112,7 +107,7 @@
             "nombre": "Francés",
             "porcentaje": "75",
             "color": "bg-success",
-            "icoFont": "fa fa-comment",
+            "ico_font": "fa fa-comment",
             "titulo": "Idiomas"
         },
         {
@@ -120,7 +115,7 @@
             "nombre": "Portugués",
             "porcentaje": "55",
             "color": "bg-success",
-            "icoFont": "fa fa-comment",
+            "ico_font": "fa fa-comment",
             "titulo": "Idiomas"
         }
     ],
@@ -129,34 +124,34 @@
             "id": 1,
             "nombre": "Github",
             "url": "https://github.com/ND-magyp",
-            "icoFont": "fa-brands fa-github"
+            "ico_font": "fa-brands fa-github"
         },
         {
             "id": 2,
             "nombre": "Instagram",
             "url": "https://www.instagram.com/agriculturaar/?hl=es",
-            "icoFont": "fa-brands fa-instagram"
+            "ico_font": "fa-brands fa-instagram"
         },
         {
             "id": 3,
             "nombre": "Twitter",
             "url": "https://twitter.com/AgriculturaAR?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-            "icoFont": "fa-brands fa-twitter"
+            "ico_font": "fa-brands fa-twitter"
         }
     ],
     "proyectos": [
         {
             "id": 1,
-            "logoProyecto": "../assets/img/Proyecto1.jpg",
-            "urlProyecto": "https://www.magyp.gob.ar/sitio/areas/gestion/carne/",
-            "tituloProyecto": "Información de Faena",
+            "logo_proyecto": "../../../../assets/img/Proyecto1.jpg",
+            "url_proyecto": "https://www.magyp.gob.ar/sitio/areas/gestion/carne/",
+            "titulo_proyecto": "Información de Faena",
             "descripcion": "Informes realizados a partir de bases de datos SQL"
         },
         {
             "id": 2,
-            "logoProyecto": "../assets/img/Proyecto2.jpg",
-            "urlProyecto": "https://siocarnes.magyp.gob.ar/",
-            "tituloProyecto": "SIO Carnes",
+            "logo_proyecto": "../../../../assets/img/Proyecto2.jpg",
+            "url_proyecto": "https://siocarnes.magyp.gob.ar/",
+            "titulo_proyecto": "SIO Carnes",
             "descripcion": "Informes realizados a partir de bases de datos SQL"
         }
     ]
