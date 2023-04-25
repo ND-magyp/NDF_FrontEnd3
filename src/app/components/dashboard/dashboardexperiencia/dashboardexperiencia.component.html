@@ -44,7 +44,7 @@
     </div>
 </section>
 <!-- Fin Experiencias-->
-    
+
 <!-- Inicio Modal Experiencias -->
 <div class="modal fade" id="ModalExperiencia" name="ModalExperiencia" tabindex="-1" aria-labelledby="ModalExperiencia"
     aria-hidden="true">
@@ -58,7 +58,7 @@
             <div class="modal-body">
                 <form [formGroup]="form">
                     <input type="hidden" name="" id="id">
-                    
+
                     <div class="mb-3 row">
                         <label for="formFileSm" class="form-label">Empresa</label>
                         <input type="text" class="form-control" id="empresa" formControlName="empresa" name=""
@@ -92,13 +92,13 @@
                             </p>
                         </div>
                     </div>
-                    
-                    
-                  <div class="mb-3 row">
+
+
+                    <div class="mb-3 row">
                         <label for="formFileSm" class="form-label">Año Inicio</label>
-                        <input type="text" class="form-control" id="inicio" formControlName="inicio" name="" placeholder="Ej: 2021"
-                        [ngClass]="{'is-invalid': InicioInvalido, 'is-valid': InicioValido}">
-                        
+                        <input type="text" class="form-control" id="inicio" formControlName="inicio" name=""
+                            placeholder="Ej: 2021" [ngClass]="{'is-invalid': InicioInvalido, 'is-valid': InicioValido}">
+
                         <!-- Control formato -->
                         <div *ngIf="Inicio?.errors && Inicio?.touched">
                             <p *ngIf="Inicio?.hasError('required')" class="errores">
@@ -109,13 +109,14 @@
                             </p>
                         </div>
                     </div>
-                                     
+
                     <div class="mb-3 row">
                         <label for="formFileSm" class="form-label">Año Fin</label>
-                        <input type="text" class="form-control" id="fin" formControlName="fin" name="" placeholder="Ej: 2021, Actualidad">
+                        <input type="text" class="form-control" id="fin" formControlName="fin" name=""
+                            placeholder="Ej: 2021, Actualidad">
                     </div>
-            
-                  <div class="modal-footer">
+
+                    <div class="modal-footer">
                         <button type="button" (click)="guardarItem()" class="btn btn-dark" data-bs-dismiss="modal"
                             [disabled]="form.invalid">Guardar</button>
                         <button type="button" (click)="limpiar()" class="btn btn-secondary"
