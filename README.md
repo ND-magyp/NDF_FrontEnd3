@@ -6,23 +6,24 @@ El Backend se encuentra en el siguiente repositorio https://github.com/ND-magyp/
 El portfolio web se encuentra en: https://portfoliondf.web.app/index
 
 
-## TecnologÌas usadas:
-ï	Angular CLI version 15.1.2.
-ï	Visual Studio Code Version: 1.77.3 
-ï	FontAwsome
-ï	Bootstrap5
+## Tecnolog√≠as usadas:
+‚Ä¢	Angular CLI version 15.1.2.
+‚Ä¢	Visual Studio Code Version: 1.77.3 
+‚Ä¢	FontAwsome
+‚Ä¢	Bootstrap5
 
 
 ## Contenido y funcionamiento:
 
-Contiene la p·gina  principal de acceso p˙blico  y la p·gina dashboard que se habilita con usuario y contraseÒa.
-Se puede realizar CRUD de los datos que se muestran en el CV.
-Se desplegÛ en Firebase.
+Contiene la p√°gina  principal de acceso p√∫blico  y la p√°gina dashboard que se habilita con usuario y contrase√±a.
+Se puede realizar CRUD de los datos que se muestran en el CV. Se puede descargar version PDF.
+
+Se despleg√≥ en Firebase.
 
 El contenido del portfolio puede verse haciendo scroll o a traves del menu de secciones.
 
 La lentitud en ver reflejados los cambios son ajenos al portfolio, es por el uso de la opcion gratuita
-de los sitios que alojan las bases de datos y las paginas.
+de los sitios que alojan la base de datos y las paginas.
 
 
 
