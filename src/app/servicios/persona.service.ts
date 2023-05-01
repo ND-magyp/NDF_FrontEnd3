@@ -10,8 +10,8 @@ import { Injectable } from '@angular/core';
 })
 
 export class PersonaService {
-  url = 'http://localhost:8080/persona';
-  // url = 'https://portfoliobackend-ndf.onrender.com/persona';
+  // url = 'http://localhost:8080/persona';
+  url = 'https://portfolio-ap-5aku.onrender.com/persona';
   constructor(private httpClient:HttpClient) { }
 
   // public listItems(): Observable<Persona[]>{

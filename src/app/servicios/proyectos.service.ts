@@ -9,8 +9,8 @@ import { Proyectos } from '../entidades/Proyectos';
   providedIn: 'root'
 })
 export class ProyectosService {
-   url = 'http://localhost:8080/proyectos';
-  //url = 'https://portfoliobackend-ab8p.onrender.com/proyectos';
+   //url = 'http://localhost:8080/proyectos';
+  url = 'https://portfolio-ap-5aku.onrender.com/proyectos';
   constructor(private httpClient:HttpClient) { }
 
   public listItems(): Observable<Proyectos[]>{

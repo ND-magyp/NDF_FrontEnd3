@@ -9,8 +9,8 @@ import { Experiencias } from '../entidades/Experiencias';
   providedIn: 'root'
 })
 export class ExperienciasService {
- url = 'http://localhost:8080/experiencias';
-   // url = 'https://portfoliobackend-ndf.onrender.com/experiencias';
+ // url = 'http://localhost:8080/experiencias';
+   url = 'https://portfolio-ap-5aku.onrender.com/experiencias';
   constructor(private httpClient:HttpClient) { }
 
   public listItems(): Observable<Experiencias[]>{

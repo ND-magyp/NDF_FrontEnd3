@@ -1,9 +1,32 @@
 # Portafolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
+Portfolio para el curso de Desarrollador Web Full Stack de Argentina Programa. 
+En este repositorio se encuentra el Frontend del proyecto. 
+El Backend se encuentra en el siguiente repositorio https://github.com/ND-magyp/NDF_BackEnd 
+El portfolio web se encuentra en: https://portfoliondf.web.app/index
+
+
+## Tecnologías usadas:
+•	Angular CLI version 15.1.2.
+•	Visual Studio Code Version: 1.77.3 
+•	FontAwsome
+•	Bootstrap5
+
+
+## Contenido y funcionamiento:
+
+Contiene la página  principal de acceso público  y la página dashboard que se habilita con usuario y contraseña.
+Se puede realizar CRUD de los datos que se muestran en el CV.
+Se desplegó en Firebase.
+
+El contenido del portfolio puede verse haciendo scroll o a traves del menu de secciones.
+
+La lentitud en ver reflejados los cambios son ajenos al portfolio, es por el uso de la opcion gratuita
+de los sitios que alojan las bases de datos y las paginas.
+
+
 
 ## Development server
-
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding

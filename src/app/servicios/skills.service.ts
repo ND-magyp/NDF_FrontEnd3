@@ -10,8 +10,8 @@ import { Skills } from '../entidades/Skills';
 })
 export class SkillsService {
   
-  url = 'http://localhost:8080/skills';
-  // url = 'https://portfoliobackend-ndf.onrender.com/skills';
+  //url = 'http://localhost:8080/skills';
+   url = 'https://portfolio-ap-5aku.onrender.com/skills';
   constructor(private httpClient:HttpClient) { }
 
   public listItems(): Observable<Skills[]>{

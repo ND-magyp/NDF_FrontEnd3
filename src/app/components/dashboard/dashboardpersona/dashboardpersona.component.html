@@ -11,8 +11,6 @@
         <div class="text-center mb-3">
             <button class="btn btn-primary boton text-center" (click)="cargarItem()" data-bs-toggle="modal"
                 data-bs-target="#ModalPerfil" title="editar">Editar Perfil</button>
-                <button class="btn btn-dark volver" (click)="volver()" title="Volver"><i
-                    class="bi bi-box-arrow-left"></i></button>
         </div>
         <hr>
         <img [src]="persona.banner" class="w-100 img-fluid banner" alt="Banner">
@@ -48,9 +46,9 @@
                 <form [formGroup]="form">
                     <input type="hidden" name="" id="id">
                     <div class="mb-3 row">
-                        <label for="formFileSm" class="form-label">Foto de Perfil</label>
-                        <input type="text" class="form-control" id="profile_Image" formControlName="profile_Image" name=""
-                            placeholder="Ej: ../../../../assets/img/NDF.jpg"
+                        <label for="formFileSm" class="form-label">Foto del Perfil</label>
+                        <input type="text" class="form-control" id="profile_Image" formControlName="profile_Image"
+                            name="" placeholder="../../../../assets/img/NDF.jpg"
                             [ngClass]="{'is-invalid': Profile_imageInvalido, 'is-valid': Profile_imageValido}">
 
                         <!-- Control formato -->
@@ -63,7 +61,7 @@
                     <div class="mb-3 row">
                         <label for="formFileSm" class="form-label">Banner</label>
                         <input type="text" class="form-control" id="banner" formControlName="banner" name=""
-                            placeholder="Ej: ../../../../assets/img/banner3.jpg"
+                            placeholder="../../../../assets/img/banner3.jpg"
                             [ngClass]="{'is-invalid': BannerInvalido, 'is-valid': BannerValido}">
 
                         <!-- Control formato -->
@@ -76,7 +74,7 @@
                     <div class="mb-3 row">
                         <label for="formFileSm" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="nombre" formControlName="nombre" name=""
-                            placeholder="Ej: Norma D."
+                            placeholder="Norma A."
                             [ngClass]="{'is-invalid': NombreInvalido, 'is-valid': NombreValido}">
 
                         <!-- Control formato -->

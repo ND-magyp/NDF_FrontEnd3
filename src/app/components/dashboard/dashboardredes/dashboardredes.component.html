@@ -9,8 +9,6 @@
                 <div class="text-center">
                     <button type="button" class="btn btn-primary nuevo text-center" data-bs-toggle="modal"
                         data-bs-target="#ModalRedes">Agregar Item</button>
-                    <button class="btn btn-dark volver" (click)="volver()" title="Volver"><i
-                            class="bi bi-box-arrow-left"></i></button>
                 </div>
                 <hr>
                 <ul>
@@ -18,10 +16,10 @@
                         <li class="list-group-item mt-5">
                             <div class="container row">
                                 <div class="col-8 col-md-10">
-                                    <p>Nombre: {{item.nombre}}</p>
-                                    <p>Link: {{item.url}}</p>
-                                    <p>Icono: {{item.ico_font}} <i [ngClass]="item.ico_font"
-                                            class="fa-lg text-black m-0 p-0"></i></p>
+                                    <h4><b>Nombre:</b> {{item.nombre}}</h4>
+                                    <h4><b>Link:</b> {{item.url}}</h4>
+                                    <h4><b>Icono:</b> {{item.ico_font}} <i [ngClass]="item.ico_font"
+                                            class="fa-lg text-black m-0 p-0"></i></h4>
                                 </div>
                                 <div class="col-1 col-md-2 text-center">
                                     <div>
@@ -38,7 +36,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr class="linea"> 
+                            <hr class="linea">
                         </li>
                     </div>
                 </ul>
@@ -65,7 +63,7 @@
                     <div class="mb-3 row">
                         <label for="formFileSm" class="form-label">Nombre </label>
                         <input type="text" class="form-control" id="nombre" formControlName="nombre" name=""
-                            placeholder="Ej: Github" 
+                            placeholder="Ej: Github"
                             [ngClass]="{'is-invalid': NombreInvalido, 'is-valid': NombreValido}">
 
                         <!-- Control formato -->
@@ -100,7 +98,7 @@
                     <div class="mb-3 row">
                         <label for="formFileSm" class="form-label">Icono</label>
                         <input type="text" class="form-control" id="ico_font" formControlName="ico_font" name=""
-                            placeholder="Ej: https:// fa-brands fa-github" 
+                            placeholder="Ej: https:// fa-brands fa-github"
                             [ngClass]="{'is-invalid': ico_fontInvalido, 'is-valid': ico_fontValido}">
 
                         <!-- Control formato -->

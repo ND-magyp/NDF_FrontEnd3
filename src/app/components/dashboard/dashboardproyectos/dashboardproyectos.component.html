@@ -9,8 +9,7 @@
                 <div class="text-center">
                     <button type="button" class="btn btn-primary nuevo text-center" data-bs-toggle="modal"
                         data-bs-target="#ModalProyecto">Agregar Item</button>
-                    <button class="btn btn-dark volver" (click)="volver()" title="Volver"><i
-                            class="bi bi-box-arrow-left"></i></button>
+                    
                 </div>
                 <ul>
                     <div *ngFor="let item of proyectos">
@@ -20,8 +19,9 @@
                                     <img [src]="item.logo_proyecto" class="card-img-top p-2">
                                 </div>
                                 <div class="card-body col-8 col-md-4">
-                                    <h5>{{item.titulo_proyecto}}</h5>
-                                    <p>{{item.descripcion}}</p>
+                            	
+                                    <h4><b>Proyecto:</b> {{item.titulo_proyecto}}</h4>
+                                    <h4><b>Descripción:</b> {{item.descripcion}}</h4>
                                     <a [href]="item.url_proyecto" target="_blank" class="btn btn-primary">Web del
                                         sitio</a>
                                 </div>

@@ -9,8 +9,8 @@ import { Estudios } from '../entidades/Estudios';
   providedIn: 'root'
 })
 export class EstudiosService {
-   url = 'http://localhost:8080/estudios';
-  //  url = 'https://portfoliobackend-ndf.onrender.com/estudios';
+   //  url = 'http://localhost:8080/estudios';
+  url = 'https://portfolio-ap-5aku.onrender.com/estudios';
     constructor(private httpClient:HttpClient) { }
   
     public listItems(): Observable<Estudios[]>{
