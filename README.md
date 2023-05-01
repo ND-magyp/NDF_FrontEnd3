@@ -22,7 +22,7 @@ Se desplegó en Firebase.
 
 El contenido del portfolio puede verse haciendo scroll o a traves del menu de secciones.
 
-La lentitud en ver reflejados los cambios son ajenos al portfolio, es por el uso de la opcion gratuita
+La lentitud en ver reflejados los cambios es ajena al portfolio, es por el uso de la opcion gratuita
 de los sitios que alojan la base de datos y las paginas.
 
 
